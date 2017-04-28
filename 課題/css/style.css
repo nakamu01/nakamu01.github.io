@@ -1,0 +1,523 @@
+
+/* ::::::::setting:::::::::: */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html{
+	font-family:"游ゴシック体", "Yu Gothic", YuGothic, sans-serif ;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container{
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* :::::::Header::::::: */
+
+header{
+	width: 100%;
+	height: 95px;
+	background-color: white;
+}
+
+.logo{
+	width: 330px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.logo:hover{
+	opacity: 0.4;
+}
+
+.menu{
+	float: right;
+}
+
+.menu-list{
+	list-style-type: none;
+	float: left;
+	padding-left: 20px;
+	padding-right: 25px;
+	padding-top: 55px;
+	font-size: 17px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+/* ハンバーガーメニュー */
+.menu-box{
+	display: none;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-right: 10%;
+	border: 2px solid black;
+	margin-top: 10px;
+}
+
+.list-bar{
+	display: block;
+	width: 25px;
+	height: 2px;
+	margin: 5px auto;
+	background-color: black;
+}
+
+.list-bar:first-child{
+	margin-top: 10px;
+}
+/* ハンバーガーメニュー終わり */
+
+/* :::::::MainVisual::::::: */
+
+	#container{
+	width: 100%;
+	max-width: 100%;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	}	
+
+/* :::::::Massage::::::: */
+
+.message-wrapper{
+	height: 350px;
+}
+
+.heading{
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.heading::after{
+	content: "";
+	display: block;
+	width: 90px;
+	height: 1.5px;
+	margin: 3px auto 0 auto;
+	background-color: #c0c0c0;
+}
+
+.lead{
+	margin-bottom: 30px;
+	text-align:center;
+	font-size: 18px;
+	line-height: 45px;
+}
+
+/* :::::::Item::::::: */
+
+.item-wrapper{
+	height: 600px;
+}
+
+.items{
+	width: 950px;
+	margin: 0 auto;
+}
+
+.item:first-child{
+	margin-right: 50px;
+}
+
+.item:hover{
+	opacity: 0.6;
+}
+
+.item{
+	position: relative;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	text-decoration: none;
+	width: 450px;
+	height: 300px;
+}
+
+.number1{
+	background-image: url(../img/Item-1.jpg);
+}
+
+.number2{
+	background-image: url(../img/Item-2.jpg);
+}
+
+.underbar{
+	position: absolute;
+	bottom: 0;
+
+	width: 450px;
+	height: 30px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	opacity: 0.7;
+}
+
+/* :::::::Shop Info::::::: */
+
+.shop-wrapper{
+	height: 600px
+}
+
+.shop-heading{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.shop-info{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.access-map{
+	float:left;
+	margin-right: 30px;
+
+}
+
+.info{
+	margin-top: 30px;
+}
+
+.info a{
+
+	text-decoration:none;
+}
+
+.hours{
+	margin-top: 20px;
+}
+
+.btn{
+	padding: 5px 13px;
+	margin-top: 10px;
+  	color: white;
+  	display: inline-block;
+  	opacity: 0.9;
+  	border-radius: 4px;
+  	background-color: #5D86C2;
+  	box-shadow: 0.7px 5px  #4466A7;
+}
+
+.btn:hover{
+	opacity: 1;
+}
+
+/* :::::::to TOP:::::: */
+
+.toTop{
+	text-align: center;
+}
+
+.toTop p{
+	opacity: 0.7;
+	font-size: 12px;
+	margin-bottom: 30px;
+	line-height: 90%;
+}
+
+/* ::::::Footer::::::: */
+
+footer{
+	height: 100px;
+	background-color: #c0c0c0;
+}
+
+.footer-menu{
+	width: 370px;
+	height: 80px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer-menu li{
+	list-style-type: none;
+	float: left;
+	padding-left: 20px;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.footer-menu p{
+	font-size: 12px;
+	line-height: 80%;
+}
+
+
+/* :::::::::::::::::::::::::::;
+	      Media Queries
+::::::::::::::::::::::::::::::; */
+@media(max-width: 1023px){
+
+
+	/* ::::setting:::: */
+
+	.container{
+		width: 100%;
+
+	}
+
+	.heading{
+		font-size: 25px;
+	}
+
+	.lead{
+		font-size: 18px;
+	}
+
+	/* :::::::Header::::::: */
+
+	header{
+		height: 60px;
+		
+	}
+
+	.logo{
+		float: none;
+		width: 200px;
+		margin-left: 1%;
+	}
+
+	.menu-box{
+		display: block;
+	}
+
+	.menu{
+		float: none;
+	}
+
+	.menu-list{
+		display: none;
+		float: none;
+		width: 100%;
+		line-height: 50px;
+		border-top: 1px solid gray;
+		text-align: center;
+		background-color: black;
+	}
+
+
+	/* ::::::: Items :::::: */
+	.item-wrapper{
+		height: 850px;
+	}
+
+	.items{
+		width: 100%;
+	}
+
+	.item{
+		width: 100%;
+		float: none;
+	}
+
+	.number1{
+		margin: 0 auto;
+	}
+
+	.number2{
+		margin: 10px auto 0 auto;
+	}
+
+	.underbar{
+		width: 100%;
+	}
+
+	/* ::::::: Shop Info :::::: */
+	.shop-wrapper{
+		height: 950px;
+	}
+
+	.shop-info{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+
+	.access-map{
+		float: none;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.info{
+		text-align: center;
+	}
+	
+}
+
+
+@media(max-width: 767px){
+
+	/* ::::setting:::: */
+
+	.container{
+		width: 100%;
+
+	}
+
+	.heading{
+		font-size: 20px;
+	}
+
+	.lead{
+		font-size: 15px;
+		line-height: 250%;
+	}
+
+	/* :::::::Header::::::: */
+
+	header{
+		height: 60px;
+		position: fixed;
+		z-index: 1;
+	}
+
+	.logo{
+		float: none;
+		width: 200px;
+		margin-left: 1%;
+	}
+
+	.menu-box{
+		display: block;
+	}
+
+	.menu{
+		float: none;
+	}
+
+	.menu-list{
+		display: none;
+		float: none;
+		width: 100%;
+		line-height: 50px;
+		border-top: 1px solid gray;
+		text-align: center;
+		background-color: black;
+	}
+
+	/* ::::::: MainVisual :::::: */
+	
+	#container{
+		display: none;
+	}	
+	
+	
+	.mv{
+		width: 100%;
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../img/Top-1.jpg);
+	}
+	
+	/* :::::::Massage:::::*/
+	.message-wrapper{
+		height: 300px;
+	}
+
+	/* ::::::: Items :::::: */
+	.item-wrapper{
+		height: 800px;
+	}
+
+	.items{
+		width: 100%;
+	}
+
+	.item{
+		width: 100%;
+		float: none;
+	}
+
+	.number1{
+		margin: 0 auto;
+	}
+
+	.number2{
+		margin: 10px auto 0 auto;
+	}
+
+	.underbar{
+		width: 100%;
+	}
+
+	/* ::::::: Shop Info :::::: */
+	.shop-wrapper{
+		
+		height: 450px;
+	}
+
+	.shop-info{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+
+	.access-map{
+		display: none;
+	}
+
+	.info{
+		text-align: center;
+	}
+
+	/* :::::::to TOP ::::::*/
+
+	.toTop{
+		display: none;
+	}
+
+	/* :::::::Footer::::::*/
+
+	footer{
+	height: 80px;
+	}
+
+	.footer-menu{
+		width: 350px;
+	}
+
+	.footer-menu li{
+		font-size: 12px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.footer-menu p{
+		display: none;
+	}
+
+}
+
+
